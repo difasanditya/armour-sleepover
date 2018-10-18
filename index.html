@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Armour's Sleepover Party</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.onepage-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/onepage-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" href="assets/img/icon.ico">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-check">
+    <nav id="navbar">
+        <ul>
+            <li>
+                <label for="menu-check">
+                    <p>tutup</p>
+                    <i class="fas fa-bars"></i>
+                </label>
+            </li>
+            <li>
+                <label id="venue-button">
+                    <p>venue</p>
+                    <i class="fas fa-map-marked-alt"></i>
+                </label>
+            </li>
+            <li>
+                <label id="dresscode-button">
+                    <p>dresscode</p>
+                    <i class="fas fa-tshirt"></i>
+                </label>
+            </li>
+            <li>
+                <label id="rundown-button">
+                    <p>rundown</p>
+                    <i class="far fa-calendar-alt"></i>
+                </label>
+            </li>
+            <li>
+                <label id="registration-button">
+                    <p>pendaftaran</p>
+                    <i class="fas fa-user-plus"></i>
+                </label>
+            </li>
+            <li>
+                <label id="contact-button">
+                    <p>contact</p>
+                    <i class="far fa-address-book"></i>
+                </label>
+            </li>
+        </ul>
+    </nav>
+    <div id="main">
+        <section id="home">
+            <div id="home-container">
+                <h1>
+                    <nav>armour's</nav> sleepover party
+                </h1>
+                <div id="img">
+                    <img src="assets/img/wolf.png" alt="">
+                </div>
+                <nav id="nav">
+                    <button id="move-down" class="fas fa-angle-down"></button>
+                    <p>Scroll Down</p>
+                </nav>
+            </div>
+        </section>
+        <section id="venue">
+            <h1>venue</h1>
+            <div id="map"></div>
+            <button id="caption">
+                <i class="fas fa-map-marked-alt"></i>
+                <div id="text">
+                    <h2>bca learning institute</h2>
+                    <h2>discussion room lantai 10</h2>
+                    <p>sentul city, jalan pakuan no 3, sumur batu, babakan madang</p>
+                </div>
+            </button>
+        </section>
+        <section id="dresscode">
+            <h1>dresscode</h1>
+            <div id="container">
+                <div class="item">
+                    <i class="fas fa-home"></i>
+                    <p>baju santai ala rumahan</p>
+                </div>
+                <div>
+                    <p>atau</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-building"></i>
+                    <p>seragam pada hari itu</p>
+                </div>
+            </div>
+        </section>
+        <section id="rundown">
+            <div id="container">
+                <h1>rundown</h1>
+                <div id="timeline">
+                    <div class="item">
+                        <div>
+                            <p>05.00 pm<b>: pintu dibuka</b></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <p>05.30 pm<b>: penampilan kelas</b></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <p>06.00 pm<b>: istirahat</b></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <p>06.30 pm<b>: pembagian doorprize</b></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <p>06.45 pm<b>: penampilan armour</b></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <p>07.30 pm<b>: acara bebas</b></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <p>08.00 pm<b>: acara selesai</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="register">
+            <div id="slider">
+                <div class="item" id="form">
+                    <h1>pendaftaran</h1>
+                    <form action="" method="POST" id="data-form">
+                        <p>hai! namaku adalah <input type="text" name="name" id="name" class="dot" placeholder="masukkan nama"></p>
+                        <p>aku dari kelas
+                            <select name="" id="select">
+                                <option value="" selected>Pilih Kelas</option>
+                                <option value="PPA43">PPA 43</option>
+                                <option value="PPA44">PPA 44</option>
+                                <option value="PPA45">PPA 45</option>
+                                <option value="PPA46">PPA 46</option>
+                                <option value="PPA47">PPA 47</option>
+                                <option value="PPA48">PPA 48</option>
+                                <option value="PPTI5">PPTI 5</option>
+                                <option value="PPTI6">PPTI 6</option>
+                            </select>
+                        </p>
+                        <p>alamat emailku adalah <input type="text" name="email" id="email" class="dot" placeholder="masukkan email"></p>
+                        <button id="form-submit" type="submit">daftar!</button>
+                        <p id="error-register" class="warning"></p>
+                    </form>
+                </div>
+                <div class="item info">
+                    <h1>informasi</h1>
+                    <p>pilih satu angka antara 1-999<br>
+                       pastikan angkamu adalah <b>angka terkecil</b> yang paling <b>unik</b> diantara semua angka pilihan orang lain.
+                       unik artinya, <b>tidak ada orang lain</b> yang memilih angka itu selain kamu.<br>
+                       Sebagai referensi, permainan ini mirip <a target="_blank" rel="noopener noreferrer" href="http://candukoding.blogspot.com/2017/04/event-line-tebak-harga.html">line tebak harga</a>.<br><br>Good luck!
+                    </p>
+                    <button class="next">mengerti!</button>
+                </div>
+                <div class="item" id="slot">
+                    <h1>pilih angkamu</h1>
+                    <div class="slot-machine">
+                        <div class="background">
+                            <div class="background-2">
+                                <h2>armour's slot machine</h2>
+                                <div class="numbers-container">
+                                    <div class="layer">
+                                        <input type="text" id="num-1" class="number" maxlength="1" placeholder="0">
+                                        <input type="text" id="num-2" class="number" maxlength="1" placeholder="0">
+                                        <input type="text" id="num-3" class="number" maxlength="1" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>ps: jangan terburu-buru ;)</p>
+                    <div id="button-container">
+                        <!-- <button id="random">acak!</button> -->
+                        <button id="submit">kirim!</button>
+                    </div>
+                    <p id="error-lucky" class="warning"></p>
+                </div>
+                <div class="item info">
+                    <h1>mohon tunggu</h1>
+                    <p>kami sedang memproses datamu! harap tunggu sebentar.</p>
+                </div>
+                <div class="item info">
+                    <h1 id="thanks">terima kasih, name!</h1>
+                    <p>angka keberuntunganmu telah kami simpan! silahkan cek emailmu dan pastikan kamu telah menerima
+                        email dari armour. kamu harus menunjukkan email tersebut untuk menerima hadiah.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div id="container">
+                <h1>about</h1>
+                <img src="assets/img/logo-white.png">
+                <p>Kami menyebut diri kami Armour, sebuah kependekan dari Artistic and Marvelous Four. Merupakan
+                    sebuah kelas yang terdiri dari dua puluh delapan pejuang yang berasal dari berbagai daerah dan
+                    budaya. Sangat identik dengan maskot serigala yang terkenal akan kekompakannya dalam regu.</p>
+                <div id="button-container">
+                    <a href="mailto:ppti4bca@gmail" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/pptibca4/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC5UN51ak2a5NGrBVNini6Ng" title="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <footer>
+                    <p><i class="far fa-copyright"></i> copyright 2018 artistic and marvelous four</p>
+                </footer>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="assets/js/init.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+<!-- Hi Hooman! -->
+<!-- What are you doing here? lol -->
+<!-- /watch?v=dQw4w9WgXcQ -->
+<!-- dsa255 -->
+
+</html>

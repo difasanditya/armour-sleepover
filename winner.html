@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Armour"s Farewell Party</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/icon.ico">
+</head>
+
+<body id="winner">
+    <div id="container">
+        <div id="slider">
+            <div class="item">
+                <h1>pemenang doorprize</h1>
+                <form action="" method="POST" id="form">
+                    <div id="select-container">
+                        <div class="item">
+                            <p>Pilih kelas pertama</p>
+                            <select name="" id="classname1">
+                                <option value="" selected>Pilih Kelas</option>
+                                <option value="PPA43">PPA 43</option>
+                                <option value="PPA44">PPA 44</option>
+                                <option value="PPA45">PPA 45</option>
+                                <option value="PPA46">PPA 46</option>
+                                <option value="PPA47">PPA 47</option>
+                                <option value="PPA48">PPA 48</option>
+                                <option value="PPTI5">PPTI 5</option>
+                                <option value="PPTI6">PPTI 6</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <p>Pilih kelas kedua</p>
+                            <select name="" id="classname2">
+                                <option value="" selected>Pilih Kelas</option>
+                                <option value="PPA43">PPA 43</option>
+                                <option value="PPA44">PPA 44</option>
+                                <option value="PPA45">PPA 45</option>
+                                <option value="PPA46">PPA 46</option>
+                                <option value="PPA47">PPA 47</option>
+                                <option value="PPA48">PPA 48</option>
+                                <option value="PPTI5">PPTI 5</option>
+                                <option value="PPTI6">PPTI 6</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <p>Pilih kelas ketiga</p>
+                            <select name="" id="classname3">
+                                <option value="" selected>Pilih Kelas</option>
+                                <option value="PPA43">PPA 43</option>
+                                <option value="PPA44">PPA 44</option>
+                                <option value="PPA45">PPA 45</option>
+                                <option value="PPA46">PPA 46</option>
+                                <option value="PPA47">PPA 47</option>
+                                <option value="PPA48">PPA 48</option>
+                                <option value="PPTI5">PPTI 5</option>
+                                <option value="PPTI6">PPTI 6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">pilih pemenang!</button>
+                    <p id="error" class="warning"></p>
+                </form>
+            </div>
+            <div class="item info">
+                <h1>mohon tunggu</h1>
+                <p>kami sedang memproses data! harap tunggu sebentar.</p>
+            </div>
+            <div class="item">
+                <h1>pemenang doorprize</h1>
+                <div id="slot-container">
+                    <div class="item">
+                        <div id="slot-1" class="slot-machine">
+                            <div class="background">
+                                <div class="background-2">
+                                    <h2>armour's slot machine #1</h2>
+                                    <div class="numbers-container">
+                                        <div class="layer">
+                                            <input readonly type="text" id="slot-1-num-1" class="number slot-number-1" maxlength="1"
+                                                placeholder="0">
+                                            <input readonly type="text" id="slot-1-num-2" class="number slot-number-1" maxlength="1"
+                                                placeholder="0">
+                                            <input readonly type="text" id="slot-1-num-3" class="number slot-number-1" maxlength="1"
+                                                placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button id="show-slot-1" class="show-button">tampilkan pemenang!</button>
+                            <button id="request-new-1" class="request-button">angka lain</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div id="slot-2" class="slot-machine">
+                            <div class="background">
+                                <div class="background-2">
+                                    <h2>armour's slot machine #2</h2>
+                                    <div class="numbers-container">
+                                        <div class="layer">
+                                            <input readonly type="text" id="slot-2-num-1" class="number slot-number-2" maxlength="1"
+                                                placeholder="0">
+                                            <input readonly type="text" id="slot-2-num-2" class="number slot-number-2" maxlength="1"
+                                                placeholder="0">
+                                            <input readonly type="text" id="slot-2-num-3" class="number slot-number-2" maxlength="1"
+                                                placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button id="show-slot-2" class="show-button">tampilkan pemenang!</button>
+                            <button id="request-new-2" class="request-button">angka lain</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div id="slot-3" class="slot-machine">
+                            <div class="background">
+                                <div class="background-2">
+                                    <h2>armour's slot machine #3</h2>
+                                    <div class="numbers-container">
+                                        <div class="layer">
+                                            <input readonly type="text" id="slot-3-num-1" class="number slot-number-3" maxlength="1"
+                                                placeholder="0">
+                                            <input readonly type="text" id="slot-3-num-2" class="number slot-number-3" maxlength="1"
+                                                placeholder="0">
+                                            <input readonly type="text" id="slot-3-num-3" class="number slot-number-3" maxlength="1"
+                                                placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button id="show-slot-3" class="show-button">tampilkan pemenang!</button>
+                            <button id="request-new-3" class="request-button">angka lain</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="shuffle">shuffle!</button>
+                <p id="fetch"></p>
+            </div>
+        </div>
+        <div id="button-container">
+            <a href="mailto:ppti4bca@gmail" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/pptibca4/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC5UN51ak2a5NGrBVNini6Ng" title="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <footer>
+            <p><i class="far fa-copyright"></i> copyright 2018 artistic and marvelous four</p>
+        </footer>
+    </div>
+</body>
+<script src="assets/js/winner.js"></script>
+<!-- Hi Hooman! -->
+<!-- What are you doing here? lol -->
+<!-- /watch?v=dQw4w9WgXcQ -->
+<!-- dsa255 -->
+
+</html>

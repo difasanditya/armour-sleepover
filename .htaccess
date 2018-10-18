@@ -1,0 +1,11 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<FilesMatch "winner.html">
+AuthType Basic
+AuthName "Enter credential to open the WINNER page"
+AuthUserFile /home/armourfa/.htpasswd
+require valid-user
+</FilesMatch>
